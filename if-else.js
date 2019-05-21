@@ -108,3 +108,34 @@ x = 25;
 if (x > 19) {
   console.log((x - 19) * 2);
 } //12
+
+
+
+
+
+// Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / (height * height). (mass in kg and height in meter).
+//
+// 1. Store Mark's and John's mass and height in variables.
+let markMass = 75;
+let markHeight = 1.75;
+let johnMass = 100;
+let johnHeight = 1.95;
+
+// 2. Calculate both their BMIs and store their BMIs in variables.
+let bmiMark = markMass / (markHeight * markHeight);
+console.log(bmiMark); //24.4898
+let bmiJohn = johnMass / (johnHeight * johnHeight);
+console.log(bmiJohn); //26.2985
+
+// 3. Create a boolean variable containing information about whether Mark has a higher BMI than John.
+let bmiBigger = bmiMark > bmiJohn;
+
+// 4. Print a string to the console containing the variable from step 3 using string interpolation. (e.g. "Is Mark's BMI higher than John's? true").
+console.log(`Marks BMI is higher than Johns: ${bmiBigger}`);
+
+// 5. Create an if statement which prints the name and BMI of the person with the highest BMI.
+if (bmiMark > bmiJohn) {
+  console.log(`Mark ${bmiMark}`);
+} else {
+  console.log(`John ${bmiJohn}`);
+}
