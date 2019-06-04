@@ -54,3 +54,11 @@ val = str.match("to"); //index 8 ... etc
 val = str.includes("universe"); //true
 
 console.log(val);
+
+
+
+//Number("str")
+//converts string into Number
+
+// String(10)
+// converts number into string

@@ -52,28 +52,28 @@ if (a > b && a > c) {
 let str = "thon";
 let newStr = "Py" + str;
 
-if (newStr.substring(0, 2) === "Py") {
+if (newStr.substring(0, 2).toLowerCase() === "py") {
   console.log(str);
 } else {
   console.log(newStr);
 } //thon
 
 // 5. Calculate the sum of the two integers. If the sum is in the range 50..80 print 65 other wise print 80.
-x = 10;
+x = 25;
 y = 60;
+let sum = x + y;
 
-if (x + y >= 50 && x + x + y <= 80) {
+if (sum >= 50 && sum <= 80) {
   console.log(65);
 } else {
   console.log(80);
-} //65
+} //80
 
 // 6. Check whether the sum of two integers is 8 or whether their difference is 8. If one of these is the case, print true.
 
 x = 2;
 y = 10;
-
-if (x + y === 8 || x - y === 8 || y - x === 8) {
+if (x + y === 8 || Math.abs(x - y) === 8) {
   console.log(true);
 } //true
 
@@ -81,7 +81,7 @@ if (x + y === 8 || x - y === 8 || y - x === 8) {
 x = 11;
 y = 4;
 
-if (x === 15 || y === 15 || x + y ===15) {
+if (x === 15 || y === 15 || x + y === 15) {
   console.log(true);
 } //true
 
@@ -122,10 +122,10 @@ let johnMass = 100;
 let johnHeight = 1.95;
 
 // 2. Calculate both their BMIs and store their BMIs in variables.
-let bmiMark = markMass / (markHeight * markHeight);
-console.log(bmiMark); //24.4898
-let bmiJohn = johnMass / (johnHeight * johnHeight);
-console.log(bmiJohn); //26.2985
+let bmiMark = Math.round(markMass / (markHeight * markHeight));
+console.log(bmiMark); //24
+let bmiJohn = Math.round(johnMass / (johnHeight * johnHeight));
+console.log(bmiJohn); //26
 
 // 3. Create a boolean variable containing information about whether Mark has a higher BMI than John.
 let bmiBigger = bmiMark > bmiJohn;
