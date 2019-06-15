@@ -62,3 +62,5 @@ console.log(val);
 
 // String(10)
 // converts number into string
+
+console.log(typeof undefined);
